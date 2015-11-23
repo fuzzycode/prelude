@@ -28,3 +28,7 @@ If point was already at that position, move point to beginning of line."
          (beginning-of-line))))
 
 (global-set-key [home] 'smart-beginning-of-line)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Whitespace mode
+(setq whitespace-line-column 120)
