@@ -35,6 +35,5 @@
 (setq-default ff-other-file-alist 'my-cpp-other-file-alist)
 
 (add-hook 'c-initialization-hook (lambda ()
-                                   (define-key c-mode-base-map [(C-tab)] 'ff-get-other-file))
-          )
+                                   (define-key c-mode-base-map [(C-tab)] 'ff-get-other-file)))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
