@@ -30,5 +30,24 @@ If point was already at that position, move point to beginning of line."
 (global-set-key [home] 'smart-beginning-of-line)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Copy and kill a line without having to mark it first
+;;http://emacs-fu.blogspot.com/search/label/new?updated-max=2009-11-29T14%3A52%3A00%2B02%3A00&max-results=20
+(defadvice kill-ring-save (before slick-copy activate compile) "When called
+  interactively with no active region, copy a single line instead."
+  (interactive (if mark-active (list (region-beginning) (region-end)) (message
+                                                                       "Copied line") (list (line-beginning-position) (line-beginning-position
+                                                                                                                       2)))))
+
+(defadvice kill-region (before slick-cut activate compile)
+  "When called interactively with no active region, kill a single line instead."
+  (interactive
+   (if mark-active (list (region-beginning) (region-end))
+     (list (line-beginning-position)
+           (line-beginning-position 2)))))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Whitespace mode
 (setq whitespace-line-column 120)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
