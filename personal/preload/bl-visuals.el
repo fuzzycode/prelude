@@ -8,6 +8,6 @@
 
 (setq initial-frame-alist
       '(
-        (width . 120) ; character
+        (width . 150) ; character
         (height . 48) ; lines
         ))
