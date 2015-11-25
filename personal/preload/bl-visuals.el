@@ -4,7 +4,7 @@
 ;; These are loaded before prelude loades anything
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;(setq prelude-theme 'color-theme-heroku)
+(setq prelude-theme 'solarized-dark)
 
 (setq initial-frame-alist
       '(
