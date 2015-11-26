@@ -1,11 +1,10 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; IDO SETTINGS
-;;
-;; IDO mode settings. Prelude has a lot of ido settings but these are my personal
-;; additions.
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Package --- IDO settings
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Commentary:
+
+;;; Code:
+
+(require 'ido)
 
 (setq
  ido-save-directory-list-file "~/.emacs.d/cache/ido.last"
@@ -21,3 +20,6 @@
  ido-enable-flex-matching nil     ; don't try to be too smart
  ido-max-prospects 8              ; don't spam my minibuffer
  ido-confirm-unique-completion t) ; wait for RET, even with unique completion
+
+(provide 'bl-ido)
+;;; bl-ido.el ends here

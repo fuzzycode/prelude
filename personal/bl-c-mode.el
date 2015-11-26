@@ -1,8 +1,9 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; C MODE SETTINGS
-;;
-;; Settings for all c mode
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Package --- C mode
+
+;;; Commentary:
+;; Settings for all C modes
+
+;;; Code:
 
 (defun my-c-mode-common-hook ()
   (c-set-offset 'substatement-open 0)
@@ -36,4 +37,6 @@
 
 (add-hook 'c-initialization-hook (lambda ()
                                    (define-key c-mode-base-map [(C-tab)] 'ff-get-other-file)))
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(provide 'bl-c-mode)
+;;; bl-c-mode.el ends here
