@@ -5,7 +5,7 @@
 
 ;;; Code:
 
-(prelude-require-packages '(yasnippet ace-jump-mode))
+(prelude-require-packages '(yasnippet ace-jump-mode delight))
 
 (provide 'bl-packages)
 ;;; bl-packages.el ends here

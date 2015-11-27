@@ -51,5 +51,15 @@
 (eval-after-load "ace-jump-mode"  '(ace-jump-mode-enable-mark-sync))
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Delight mode
+;; Used to shorten mode names in the mode line.
+
+(require 'delight)
+
+(delight '((guru-mode nil nil)
+           (company-mode " C " company)
+           (whitespace-mode nil whitespace)))
+
 (provide 'bl-common)
 ;;; bl-common ends here
