@@ -8,6 +8,7 @@
 ;; Theme
 (setq prelude-theme 'solarized-dark)
 
+
 ;; Window size
 (setq initial-frame-alist
       '(
@@ -18,7 +19,7 @@
 ;; Font settings
 (set-face-attribute 'default nil
                     :family "Inconsolata"
-                    :height 100
+                    :height 110
                     :weight 'normal
                     :width 'normal)
 
