@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: utf8 header string
+# key: utf8
+#contributor: Björn Larsson (develop@bjornlarsson.net)
+# --
+# -*- coding: utf-8 -*-

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: from ... import ...
+# key: from
+#contributor: Björn Larsson (develop@bjornlarsson.net)
+# --
+from $1 import $2
+$0

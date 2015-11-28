@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: section
+# key: section
+# --
+;; ${1:$(make-string (- fill-column 6 (string-width yas/text)) ?\-)} [${1:name}]
+$0

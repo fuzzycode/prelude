@@ -1,0 +1,54 @@
+# -*- mode: snippet -*-
+# name: class with reST documentation
+# key: class
+#contributor: Björn Larsson (develop@bjornlarsson.net)
+# --
+class ${1:ClassName}(${2:object}):
+    """
+    ${3:$
+        (let* ((indent
+            (concat "\n" (make-string (current-column) 32)))
+           (args
+            (mapconcat
+             '(lambda (x)
+                (if (not (string= (nth 0 x) ""))
+                    (concat ":param " (nth 0 x) ":")))
+             (mapcar
+              '(lambda (x)
+                 (mapcar
+                  '(lambda (x)
+                     (replace-regexp-in-string "[[:blank:]]*$" ""
+                      (replace-regexp-in-string "^[[:blank:]]*" "" x)))
+                  x))
+              (mapcar '(lambda (x) (split-string x "="))
+                      (split-string yas-text ",")))
+             indent)))
+      (if (not (string= args ""))
+        (mapconcat
+         'identity
+         (list "" args)
+         indent)))
+        }
+
+        $4
+        """
+
+    def __init__(self, $3):
+        ${3:$
+        (mapconcat
+         '(lambda (x)
+            (if (not (string= (nth 0 x) ""))
+                (concat "self._" (nth 0 x) " = " (nth 0 x))))
+         (mapcar
+          '(lambda (x)
+             (mapcar
+              '(lambda (x)
+                 (replace-regexp-in-string "[[:blank:]]*$" ""
+                  (replace-regexp-in-string "^[[:blank:]]*" "" x)))
+              x))
+          (mapcar '(lambda (x) (split-string x "="))
+                  (split-string yas-text ",")))
+         (concat "\n" (make-string (current-column) 32)))
+        }
+
+        $0

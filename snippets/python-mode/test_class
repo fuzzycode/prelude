@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: test_class
+# key: tcs
+# group : definitions
+# --
+class Test${1:toTest}(unittest.TestCase):
+      """${2:description}"""
+
+      $0

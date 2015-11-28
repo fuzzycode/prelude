@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+;; ${1:$(make-string (- fill-column 3) ?\-)}
+;; ${1:$$(upcase yas/text)}
+;; ${1:$(make-string (- fill-column 3) ?\-)}
+$0
