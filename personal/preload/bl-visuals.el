@@ -19,7 +19,7 @@
 ;; Font settings
 (set-face-attribute 'default nil
                     :family "Inconsolata"
-                    :height 110
+                    :height 140
                     :weight 'normal
                     :width 'normal)
 
