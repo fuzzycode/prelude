@@ -5,7 +5,7 @@
 
 ;;; Code:
 
-(prelude-require-packages '(yasnippet ace-jump-mode delight solarized-theme cmake-ide))
+(prelude-require-packages '(yasnippet ace-jump-mode delight solarized-theme cmake-ide heroku-theme))
 
 (provide 'bl-packages)
 ;;; bl-packages.el ends here
