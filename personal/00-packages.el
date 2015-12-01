@@ -5,7 +5,7 @@
 
 ;;; Code:
 
-(prelude-require-packages '(yasnippet ace-jump-mode delight solarized-theme cmake-ide heroku-theme ace-window google-this jekyll-modes))
+(prelude-require-packages '(yasnippet ace-jump-mode delight solarized-theme cmake-ide heroku-theme ace-window google-this jekyll-modes multiple-cursors))
 
 (provide '00-packages)
 ;;; 00-packages.el ends here
