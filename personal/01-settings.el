@@ -47,6 +47,11 @@
   :config (global-company-mode)
   :diminish company-mode)
 
+;; ----------------------------------------------------- [Ace Jumping]
+(use-package ace-jump-buffer
+  :ensure t
+  :defer 2)
+
 
 (provide '01-settings)
 ;;; 01-settings.el ends here
