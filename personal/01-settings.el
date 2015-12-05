@@ -39,6 +39,12 @@
   :diminish yas-minor-mode
   :defer 1)
 
+;; ---------------------------------------------------- [Company Mode]
+(use-package company
+  :ensure t
+  :defer 2
+  :config (global-company-mode)
+  :diminish company-mode)
 
 (provide '01-settings)
 ;;; 01-settings.el ends here
