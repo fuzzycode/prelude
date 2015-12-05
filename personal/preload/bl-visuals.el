@@ -5,18 +5,18 @@
 
 ;;; Code:
 
-;; Theme
+;; ----------------------------------------------------------- [Theme]
 (setq prelude-theme 'solarized-dark)
 
 
-;; Window size
+;; ----------------------------------------------------- [Window Size]
 (setq initial-frame-alist
       '(
         (width . 150) ; character
         (height . 48) ; lines
         ))
 
-;; Font settings
+;; --------------------------------------------------- [Font Settings]
 (set-face-attribute 'default nil
                     :family "Inconsolata"
                     :height 140
