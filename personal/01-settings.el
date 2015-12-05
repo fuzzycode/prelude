@@ -32,6 +32,7 @@
 
 ;; ------------------------------------------------------- [Yasnippet]
 (use-package yasnippet
+  :ensure t
   :init (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
   :config  (progn
              (yas-global-mode 1)
@@ -45,6 +46,7 @@
   :defer 2
   :config (global-company-mode)
   :diminish company-mode)
+
 
 (provide '01-settings)
 ;;; 01-settings.el ends here
