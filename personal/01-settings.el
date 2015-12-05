@@ -6,7 +6,8 @@
 
 ;;; Code:
 
-(require 'use-package)
+(eval-when-compile
+  (require 'use-package))
 
 ;; --------------------------------------------------------- [Backups]
 (setq backup-directory-alist `((".*" . "~/.emacs.d/backups")))
