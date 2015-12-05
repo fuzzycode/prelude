@@ -6,14 +6,14 @@
 ;;; Code:
 
 (prelude-require-packages '(yasnippet
-                            ace-jump-mode
-                            delight
+                            ; ace-jump-mode
+                            ; delight
                             solarized-theme
-                            cmake-ide
-                            heroku-theme
-                            ace-window
-                            google-this
-                            jekyll-modes
+                            ; cmake-ide
+                            ; heroku-theme
+                            ; ace-window
+                            ; google-this
+                            ; jekyll-modes
                             multiple-cursors
                             use-package))
 
