@@ -94,6 +94,11 @@
   :defer t
   :bind ("C-M-," . er/expand-region))
 
+;; --------------------------------------------------- [Helm Settings]
+(use-package helm-spotify
+  :ensure t
+  :defer t)
+
 
 (provide '01-settings)
 ;;; 01-settings.el ends here
