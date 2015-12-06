@@ -100,6 +100,9 @@
   :ensure t
   :defer t)
 
+;; ------------------------------------------------------- [Guru mode]
+(use-package guru-mode
+  :diminish guru-mode)
 
 ;; --------------------------------------------------- [Helm Settings]
 (use-package helm
