@@ -56,6 +56,7 @@
 ;; ------------------------------------------------------ [Key Chords]
 (use-package key-chord
   :ensure t
+  :defer 2
   :init (key-chord-mode 1)
   :config (setq key-chord-two-keys-delay 0.075))
 
