@@ -98,7 +98,10 @@
 ;; ------------------------------------------------------- [Undo Tree]
 (use-package undo-tree
   :ensure t
-  :defer t)
+  :defer t
+  :config (global-undo-tree-mode 1)
+  :bind (("C-z" . undo)
+         ("S-C-z" . undo-tree-redo)))
 
 ;; ------------------------------------------------------- [Guru mode]
 (use-package guru-mode
