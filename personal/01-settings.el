@@ -94,6 +94,12 @@
   :defer t
   :bind ("C-M-," . er/expand-region))
 
+;; ------------------------------------------------------- [Undo Tree]
+(use-package undo-tree
+  :ensure t
+  :defer t)
+
+
 ;; --------------------------------------------------- [Helm Settings]
 (use-package helm-spotify
   :ensure t
