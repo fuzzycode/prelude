@@ -101,6 +101,9 @@
 
 
 ;; --------------------------------------------------- [Helm Settings]
+(use-package helm
+  :diminish helm-mode)
+
 (use-package helm-spotify
   :ensure t
   :defer t)
