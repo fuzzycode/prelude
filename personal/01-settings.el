@@ -6,8 +6,11 @@
 
 ;;; Code:
 
+;; -------------------------------------------------------- [Requires]
 (eval-when-compile
   (require 'use-package))
+
+(require 'bind-key)
 
 ;; --------------------------------------------------------- [Backups]
 (setq backup-directory-alist `((".*" . "~/.emacs.d/backups")))
@@ -52,6 +55,12 @@
 (use-package ace-jump-buffer
   :ensure t
   :defer 2)
+
+(use-package ace-jump-helm-line
+  :ensure t
+  :defer 3
+  :config (define-key helm-map (kbd "C-'") 'ace-jump-helm-line
+  ))
 
 ;; ------------------------------------------------------ [Key Chords]
 (use-package key-chord
