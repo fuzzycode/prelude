@@ -28,9 +28,10 @@
 
 ;; ------------------------------------------------- [Whitespace mode]
 (use-package whitespace
-             :config (setq whitespace-style
-                           '(trailing))
-             :diminish whitespace-mode)
+  :init (setq whitespace-line-column 120)
+  :config (setq whitespace-style
+                '(trailing))
+  :diminish whitespace-mode)
 
 ;; ------------------------------------------------------- [Yasnippet]
 (use-package yasnippet
