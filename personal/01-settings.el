@@ -88,6 +88,12 @@
   :defer t
   :bind (("C-x t m" . git-timemachine)))
 
+;; ------------------------------------------------ [Expand Selection]
+(use-package expand-region
+  :ensure t
+  :defer t
+  :bind ("C-M-," . er/expand-region))
+
 
 (provide '01-settings)
 ;;; 01-settings.el ends here
