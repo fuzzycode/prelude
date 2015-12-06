@@ -10,8 +10,6 @@
 (eval-when-compile
   (require 'use-package))
 
-(require 'bind-key)
-
 ;; --------------------------------------------------------- [Backups]
 (setq backup-directory-alist `((".*" . "~/.emacs.d/backups")))
 
@@ -68,6 +66,21 @@
   :defer 2
   :init (key-chord-mode 1)
   :config (setq key-chord-two-keys-delay 0.075))
+
+;; -------------------------------------------- [Multiple Cursor mode]
+(use-package multiple-cursors
+  :ensure t
+  :defer t
+  :bind
+  (("C-c m t" . mc/mark-all-like-this)
+   ("C-c m m" . mc/mark-all-like-this-dwim)
+   ("C-c m l" . mc/edit-lines)
+   ("C-c m e" . mc/edit-ends-of-lines)
+   ("C-c m a" . mc/edit-beginnings-of-lines)
+   ("C-c m n" . mc/mark-next-like-this)
+   ("C-c m p" . mc/mark-previous-like-this)
+   ("C-c m s" . mc/mark-sgml-tag-pair)
+   ("C-c m d" . mc/mark-all-like-this-in-defun)))
 
 
 (provide '01-settings)
