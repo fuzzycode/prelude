@@ -82,6 +82,12 @@
    ("C-c m s" . mc/mark-sgml-tag-pair)
    ("C-c m d" . mc/mark-all-like-this-in-defun)))
 
+;; ------------------------------------------------ [Git Time machine]
+(use-package git-timemachine
+  :ensure t
+  :defer t
+  :bind (("C-x t m" . git-timemachine)))
+
 
 (provide '01-settings)
 ;;; 01-settings.el ends here
