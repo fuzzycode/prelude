@@ -66,7 +66,10 @@
   :ensure t
   :defer 2
   :init (key-chord-mode 1)
-  :config (setq key-chord-two-keys-delay 0.075))
+  :config (progn
+            (setq key-chord-two-keys-delay 0.075)
+            (key-chord-define-global "xo" 'other-window)
+            ))
 
 ;; -------------------------------------------- [Multiple Cursor mode]
 (use-package multiple-cursors
