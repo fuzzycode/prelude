@@ -111,6 +111,14 @@
 (use-package helm
   :diminish helm-mode)
 
+(use-package helm-fuzzier
+  :ensure t
+  :config (helm-fuzzier-mode t))
+
+(use-package helm-flx
+  :ensure t
+  :config (helm-flx-mode t))
+
 (use-package helm-spotify
   :ensure t
   :defer t)
