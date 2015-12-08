@@ -127,5 +127,11 @@
   :defer t)
 
 
+;; -------------------------------------------------------- [Org Mode]
+(use-package org
+  :ensure t
+  :defer t  )
+
+
 (provide '01-settings)
 ;;; 01-settings.el ends here
