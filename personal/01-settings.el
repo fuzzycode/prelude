@@ -126,6 +126,10 @@
   :ensure t
   :defer t)
 
+(use-package helm-flyspell
+  :ensure t
+  :defer t
+  :bind (("C-." . helm-flyspell-correct)))
 
 ;; -------------------------------------------------------- [Org Mode]
 (use-package org
