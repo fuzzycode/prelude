@@ -136,6 +136,12 @@
   :ensure t
   :defer t  )
 
+(use-package uniquify
+  :defer t
+  :config(setq uniquify-buffer-name-style 'forward
+               uniquify-separator "/"
+               uniquify-after-kill-buffer-p t
+               uniquify-ignore-buffers-re "^\\*"))
 
 (provide '01-settings)
 ;;; 01-settings.el ends here
