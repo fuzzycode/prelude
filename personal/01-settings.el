@@ -146,5 +146,12 @@
                uniquify-after-kill-buffer-p t
                uniquify-ignore-buffers-re "^\\*"))
 
+;; --------------------------------------------------- [Marcdown mode]
+(use-package markdown-mode
+  :ensure t
+  :mode "\\.md\\'")
+
+
+
 (provide '01-settings)
 ;;; 01-settings.el ends here
