@@ -59,9 +59,8 @@
 
 (use-package ace-jump-helm-line
   :ensure t
-  :defer 3
-  :config (define-key helm-map (kbd "C-'") 'ace-jump-helm-line
-  ))
+  :defer nil
+  )
 
 ;; ------------------------------------------------------ [Key Chords]
 (use-package key-chord
