@@ -146,6 +146,11 @@
                uniquify-after-kill-buffer-p t
                uniquify-ignore-buffers-re "^\\*"))
 
+;; ----------------------------------------------------------- [Tramp]
+(use-package tramp
+  :defer t
+  :init (setq tramp-default-method "ssh"))
+
 ;; -------------------------------------------------------- [Flyspell]
 (use-package flyspell
   :ensure t
