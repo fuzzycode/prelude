@@ -70,6 +70,7 @@
   :config (progn
             (setq key-chord-two-keys-delay 0.075)
             (key-chord-define-global "xo" 'other-window)
+            (key-chord-define-global "gg" 'magit-status)
             ))
 
 ;; -------------------------------------------- [Multiple Cursor mode]
