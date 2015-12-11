@@ -38,7 +38,8 @@
 ;; ------------------------------------------------------- [Yasnippet]
 (use-package yasnippet
   :ensure t
-  :init (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+  :init (setq yas-snippet-dirs '("~/.emacs.d/snippets"
+                                 "~/.snippets/"))
   :config  (progn
              (yas-global-mode 1)
              (yas-reload-all))
