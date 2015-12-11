@@ -3,8 +3,6 @@
 ;;; Commentary:
 
 ;;; Code:
-
-
 (defalias 'yes-or-no-p 'y-or-n-p) ;; Shorten the answers
 
 
@@ -14,6 +12,8 @@
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+
+(scroll-bar-mode -1)
 
 (provide '03-common)
 ;;; 03-common ends here
