@@ -129,10 +129,12 @@
 (use-package helm-flyspell
   :ensure t
   :defer t
-  :bind (("C-." . helm-flyspell-correct)))
   :config (bind-key "C-." #'helm-flyspell-correct flyspell-mode-map)
   )
 
+(use-package helm-flycheck
+  :ensure t
+  :defer t)
 
 ;; -------------------------------------------------------- [Org Mode]
 (use-package org
