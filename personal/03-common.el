@@ -1,4 +1,4 @@
-;;; 02-common.el --- Common global Emacs settings
+;;; 03-common.el --- Common global Emacs settings
 
 ;;; Commentary:
 
@@ -15,5 +15,5 @@
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-(provide '02-common)
-;;; 02-common ends here
+(provide '03-common)
+;;; 03-common ends here

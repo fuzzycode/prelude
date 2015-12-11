@@ -167,5 +167,5 @@
 
 
 
-(provide '01-settings)
-;;; 01-settings.el ends here
+(provide '02-settings)
+;;; 02-settings.el ends here
