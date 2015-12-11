@@ -5,17 +5,9 @@
 
 ;;; Code:
 
-(prelude-require-packages '(yasnippet
-                            ; ace-jump-mode
-                            ; delight
-                            solarized-theme
-                            ; cmake-ide
-                            ; heroku-theme
-                            ; ace-window
-                            ; google-this
-                            ; jekyll-modes
-                            multiple-cursors
 (add-to-list 'load-path (file-name-directory buffer-file-name))
+
+(prelude-require-packages '( solarized-theme
                             use-package))
 
 (provide '00-packages)
