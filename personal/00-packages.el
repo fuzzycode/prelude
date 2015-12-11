@@ -15,6 +15,7 @@
                             ; google-this
                             ; jekyll-modes
                             multiple-cursors
+(add-to-list 'load-path (file-name-directory buffer-file-name))
                             use-package))
 
 (provide '00-packages)
