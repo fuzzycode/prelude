@@ -139,6 +139,7 @@
   :ensure t
   :defer t  )
 
+;; -------------------------------------------------------- [Uniquify]
 (use-package uniquify
   :defer t
   :config(setq uniquify-buffer-name-style 'forward
