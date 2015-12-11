@@ -146,6 +146,11 @@
                uniquify-after-kill-buffer-p t
                uniquify-ignore-buffers-re "^\\*"))
 
+;; -------------------------------------------------------- [Flyspell]
+(use-package flyspell
+  :ensure t
+  :defer t)
+
 ;; --------------------------------------------------- [Marcdown mode]
 (use-package markdown-mode
   :ensure t
