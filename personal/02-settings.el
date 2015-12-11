@@ -166,6 +166,18 @@
   :ensure t
   :mode "\\.md\\'")
 
+;; --------------------------------------------------------- [iBuffer]
+(use-package ibuffer
+  :config( progn
+           (use-package ibuffer-projectile
+             :ensure t)
+
+           (add-hook 'ibuffer-hook
+                     (lambda ()
+                       (ibuffer-projectile-set-filter-groups)
+                       (unless (eq ibuffer-sorting-mode 'alphabetic)
+                         (ibuffer-do-sort-by-alphabetic))))
+           ))
 
 
 (provide '02-settings)
