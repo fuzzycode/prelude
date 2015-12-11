@@ -35,5 +35,5 @@
   (setq mac-right-command-modifier nil)
   (setq mac-control-modifier 'meta))
 
-;;(provide '04-keys)
+(provide '04-keys)
 ;;; 04-keys.el ends here
