@@ -180,6 +180,22 @@
                          (ibuffer-do-sort-by-alphabetic))))
            ))
 
+;; ----------------------------------------------------- [Protobuffer]
+(use-package protobuf-mode
+  :ensure t
+  :defer t
+  :mode "\\.proto\\'"
+  :commands (protobuf-mode)
+  :config
+  (progn
+    (defconst my-protobuf-style
+      '((c-basic-offset . 2)
+        (indent-tabs-mode . nil)))
+
+    (add-hook 'protobuf-mode-hook
+              (lambda () (c-add-style "my-protobuf-style" my-protobuf-style t)))))
+
+
 
 (provide '02-settings)
 ;;; 02-settings.el ends here
