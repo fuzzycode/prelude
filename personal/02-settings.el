@@ -207,5 +207,11 @@
   :defer t
   :config (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls))
 
+;; ----------------------------------------------------- [Winner mode]
+(use-package winner
+  :ensure t
+  :defer t)
+
+
 (provide '02-settings)
 ;;; 02-settings.el ends here
