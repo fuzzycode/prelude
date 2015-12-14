@@ -201,6 +201,11 @@
   :defer t
   :config (bind-key "C-M-TAB" 'clang-format-region c-mode-map))
 
+;; ----------------------------------------------------------- [Magit]
+(use-package magit-gh-pulls
+  :ensure t
+  :defer t
+  :config (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls))
 
 (provide '02-settings)
 ;;; 02-settings.el ends here
