@@ -132,7 +132,7 @@
 (use-package helm-flyspell
   :ensure t
   :defer t
-  :config (bind-key "C-." #'helm-flyspell-correct flyspell-mode-map)
+  :config (bind-key "C--" 'helm-flyspell-correct flyspell-mode-map)
   )
 
 (use-package helm-flycheck
