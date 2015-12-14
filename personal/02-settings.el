@@ -195,6 +195,12 @@
     (add-hook 'protobuf-mode-hook
               (lambda () (c-add-style "my-protobuf-style" my-protobuf-style t)))))
 
+;; ---------------------------------------------------- [Clang Format]
+(use-package clang-format
+  :ensure t
+  :defer t
+  :config (bind-key "C-M-TAB" 'clang-format-region c-mode-map))
+
 
 
 (provide '02-settings)
