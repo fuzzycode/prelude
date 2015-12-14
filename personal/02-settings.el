@@ -201,6 +201,10 @@
   :defer t
   :config (bind-key "C-M-TAB" 'clang-format-region c-mode-map))
 
+;; ------------------------------------- [Emacs Setup Profiler (ESUP)]
+(use-package esup
+  :ensure t
+  :defer t)
 
 
 (provide '02-settings)
