@@ -157,7 +157,7 @@
   :defer t
   :init (setq tramp-default-method "ssh"))
 
-;; -------------------------------------------------------- [Flyspell]
+;; -------------------------------------------------------- [Fly-spell]
 (use-package flyspell
   :ensure t
   :defer t)
