@@ -1,4 +1,4 @@
-;;; 01-settings.el --- Personal settings
+;; 01-settings.el --- Personal settings
 
 ;; Keywords: lisp
 
@@ -39,7 +39,7 @@
 (use-package yasnippet
   :ensure t
   :init (setq yas-snippet-dirs '("~/.emacs.d/snippets"
-                                 "~/.snippets/"))
+                                 ))
   :config  (progn
              (yas-global-mode 1)
              (yas-reload-all))
@@ -132,8 +132,10 @@
 (use-package helm-flyspell
   :ensure t
   :defer t
-  :config (bind-key "C--" 'helm-flyspell-correct flyspell-mode-map)
-  )
+  :commands helm-flyspell-correct
+  :init (eval-after-load 'flyspell
+          '(define-key flyspell-mode-map (kbd "C-.") 'helm-flyspell-correct)))
+
 
 (use-package helm-flycheck
   :ensure t
