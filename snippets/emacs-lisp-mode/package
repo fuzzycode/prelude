@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: package
+# key: package
+# --
+;;; `(file-name-nondirectory buffer-file-name)` --- $1 -*- lexical-binding: t -*-
+
+;; Copyright (C) `(format-time-string "%Y")` `user-full-name`
+
+;;; Commentary:
+;; $2
+
+;;; Code:
+$0
+
+(provide '`(file-name-base buffer-file-name)`)
+;;; `(file-name-nondirectory buffer-file-name)` ends here
